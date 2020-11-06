@@ -4,10 +4,10 @@ runs:
   using: "composite"
   steps:
     - run: echo "Never gonna give you up"
-      shell: bash
+      shell: sh
     # - id: ls-that-container 
     #   run: chmod +x $GITHUB_ACTION_PATH/letyoudown.sh
     #   shell: bash
     - id: singing-real-good
       run: bash -e $GITHUB_ACTION_PATH/letyoudown.sh
-      shell: bash
+      shell: sh
