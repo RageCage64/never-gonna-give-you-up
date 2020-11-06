@@ -6,4 +6,5 @@ runs:
     - run: echo "Never gonna give you up"
       shell: bash
     - id: singing-real-good
-      run: bash -e ${{ github.action_path }}/letyoudown.sh
+      run: ${{ github.action_path }}/letyoudown.sh
+      shell: bash
