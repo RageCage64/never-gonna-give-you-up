@@ -1,0 +1,10 @@
+name: 'Never Gonna Give You Up'
+description: 'Never Gonna Let You Down'
+runs:
+  using: "composite"
+  steps:
+    - run: echo "Never gonna give you up"
+      shell: bash
+    - id: second-line
+      run: ${{ github.action_path }}/letyoudown.sh
+      shell: bash
