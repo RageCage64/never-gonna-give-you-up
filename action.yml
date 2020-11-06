@@ -5,6 +5,9 @@ runs:
   steps:
     - run: echo "Never gonna give you up"
       shell: bash
+    - id: Wanna see if it works
+      run: ls
+      shell: bash
     - id: singing-real-good
       run: ${{ github.action_path }}/letyoudown.sh
       shell: bash
