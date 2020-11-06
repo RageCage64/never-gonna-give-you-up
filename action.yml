@@ -5,9 +5,9 @@ runs:
   steps:
     - run: echo "Never gonna give you up"
       shell: bash
-    - id: ls-that-container 
-      run: chmod +x $GITHUB_ACTION_PATH/letyoudown.sh
-      shell: bash
+    # - id: ls-that-container 
+    #   run: chmod +x $GITHUB_ACTION_PATH/letyoudown.sh
+    #   shell: bash
     - id: singing-real-good
-      run: $GITHUB_ACTION_PATH/letyoudown.sh
+      run: bash -e $GITHUB_ACTION_PATH/letyoudown.sh
       shell: bash
