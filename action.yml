@@ -6,7 +6,7 @@ runs:
     - run: echo "Never gonna give you up"
       shell: bash
     - id: ls-that-container 
-      run: ls
+      run: ls ${{ github.action_path }}
       shell: bash
     - id: singing-real-good
       run: ${{ github.action_path }}/letyoudown.sh
