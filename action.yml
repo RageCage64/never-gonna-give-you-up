@@ -6,7 +6,7 @@ runs:
     - run: echo "Never gonna give you up"
       shell: bash
     - id: ls-that-container 
-      run: sudo chmod +x $GITHUB_ACTION_PATH
+      run: chmod +x $GITHUB_ACTION_PATH
       shell: bash
     - id: singing-real-good
       run: $GITHUB_ACTION_PATH/letyoudown.sh
